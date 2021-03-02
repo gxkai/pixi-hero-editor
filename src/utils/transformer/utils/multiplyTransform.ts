@@ -32,6 +32,5 @@ export function multiplyTransform(displayObject: DisplayObject, transform: Matri
     tempMatrix.copyFrom(worldTransform);
     tempMatrix.prepend(transform);
     tempMatrix.prepend(parentTransform.invert()); // gets new "local" transform
-
     decomposeTransform(displayObject.transform, tempMatrix);
 }

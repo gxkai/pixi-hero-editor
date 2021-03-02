@@ -830,7 +830,6 @@ export class Transformer extends Container {
         const matrix = tempMatrix.identity();
 
         // NOTE: Do not apply scaling when sx,sy = 0 to prevent matrices from being degenerate.
-
         if (xDir !== 0 && sx !== 0) {
             // Origin of horizontal scaling - a point which does not move after applying the transform
             // eslint-disable-next-line no-nested-ternary

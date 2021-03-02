@@ -54,7 +54,8 @@ export default class View extends Application {
             .pinch()
             .wheel()
             .decelerate();
-
+        viewport.fit(true);
+        viewport.zoomPercent(0.05, true);
         this.stage.addChild(viewport);
         return viewport;
     }
